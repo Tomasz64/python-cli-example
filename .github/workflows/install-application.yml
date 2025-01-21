@@ -16,7 +16,7 @@ jobs:
         python-version: '3'
 
     - name: Install setuptools
-      run: sudo apt update && sudo apt install -y python3-setuptools
+      run: sudo apt update && sudo apt install -y python3-setuptools && pip install -U pip setuptools 
 
     - name: Install dependencies
       run: |
